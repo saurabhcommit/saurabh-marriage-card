@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#3a0914">
+<meta name="description" content="Preeti & Saurabh – Divine Sangam, 25–26 November 2026, Vrindavan.">
+<title>Preeti & Saurabh | Divine Sangam · Vrindavan</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body class="lock">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<pattern id="lat" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M20 0L40 20L20 40L0 20Z" fill="none" stroke="#e9c46a" stroke-width="1.4"/><circle cx="20" cy="20" r="3" fill="#e9c46a"/></pattern>
+<symbol id="gate" viewBox="0 0 400 600">
+<rect width="400" height="600" fill="#2a060f"/>
+<path d="M14 600V200Q14 14 200 14Q386 14 386 200V600Z" fill="#4a0c1b" stroke="#e9c46a" stroke-width="7"/>
+<path d="M30 600V205Q30 30 200 30Q370 30 370 205V600Z" fill="url(#lat)" stroke="#c9a24b" stroke-width="3"/>
+<path d="M30 470H370M30 500H370" stroke="#e9c46a" stroke-width="3"/>
+<circle cx="200" cy="120" r="46" fill="#8e1b2f" stroke="#e9c46a" stroke-width="4"/><circle cx="200" cy="120" r="30" fill="none" stroke="#e9c46a" stroke-width="2" stroke-dasharray="4 4"/><circle cx="200" cy="120" r="9" fill="#ff9f1c"/>
+<path d="M200 30V600" stroke="#e9c46a" stroke-width="5"/>
+<g fill="#ff9f1c" stroke="#e9c46a" stroke-width="3"><circle cx="168" cy="340" r="15"/><circle cx="232" cy="340" r="15"/></g>
+<g fill="#e9c46a"><path d="M200 14l-9-14h18z"/><circle cx="200" cy="-2" r="5"/></g>
+</symbol>
+<symbol id="lotus" viewBox="0 0 100 60"><g fill="#ffc22e" stroke="#c9a24b" stroke-width="1.5"><path d="M50 56C34 46 36 22 50 6c14 16 16 40 0 50Z"/><path d="M50 56C26 56 16 40 12 22c22 2 36 12 38 34Zm0 0c24 0 34-16 38-34-22 2-36 12-38 34Z" fill="#ff9f1c"/><path d="M50 56C28 62 8 52 2 36c18-2 36 4 48 20Zm0 0c22 6 42-4 48-20-18-2-36 4-48 20Z" fill="#f6c6d0"/></g></symbol>
+</defs></svg>
+
+<div class="gate" id="gate">
+  <div class="door dl"><svg viewBox="0 0 400 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#gate" width="400" height="600"/></svg></div>
+  <div class="door dr"><svg viewBox="0 0 400 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#gate" width="400" height="600"/></svg></div>
+  <div class="gate-ui">
+    <p class="mantra" lang="hi">॥ श्री गणेशाय नमः ॥</p>
+    <h2>Preeti <span>&amp;</span> Saurabh</h2>
+    <p class="inv">invite you to their wedding</p>
+    <button id="enter" type="button">Open the gate 🥁</button>
+  </div>
+</div>
+
+<section class="intro" id="top">
+  <div class="mandala" aria-hidden="true"></div>
+  <div class="intro-copy">
+    <p class="mantra" lang="hi">॥ श्री गणेशाय नमः ॥</p>
+    <p class="eyebrow">Shaadi ka Nimantran</p>
+    <h1>Divine <em>Sangam</em></h1>
+    <p class="of">of</p>
+    <h2 class="names">Preeti <span>&amp;</span> Saurabh</h2>
+    <p class="drums" aria-hidden="true"><i>🥁</i><i>🪔</i><i>🥁</i></p>
+    <p class="where">25 – 26 November 2026 · Vrindavan</p>
+    <a class="scroll" href="#couple">Scroll down ↓</a>
+  </div>
+  <div class="petals" aria-hidden="true"></div>
+</section>
+
+<header class="nav"><a href="#top" class="mono">P<span>&amp;</span>S</a>
+<nav><a href="#couple">Couple</a><a href="#venue">Venue</a><a href="#events">Events</a><a href="#rsvp">RSVP</a></nav>
+<button class="cal-btn" type="button">Save the date</button></header>
+
+<section class="reveal-date" id="save-the-date">
+  <p class="eyebrow">SAVE THE DATE</p>
+  <h2>A special reveal</h2>
+  <p class="mut">Scratch the golden card to reveal our wedding date</p>
+  <div class="scratch"><b>25 &amp; 26 November</b><span>2026 &middot; Vrindavan</span><canvas id="cv" width="260" height="130" aria-label="Scratch to reveal the date"></canvas></div>
+  <p class="eyebrow" style="margin-top:6px">THE COUNTDOWN BEGINS</p>
+  <div class="count"><div><b id="d">0</b><small>days</small></div><div><b id="h">0</b><small>hours</small></div><div><b id="m">0</b><small>min</small></div><div><b id="s">0</b><small>sec</small></div></div>
+</section>
+
+<main>
+<section class="couple reveal" id="couple">
+  <p class="eyebrow">Two souls, one divine bond</p>
+  <figure class="photo"><img src="assets/couple.jpg" alt="Preeti and Saurabh" loading="lazy"></figure>
+  <div class="cards">
+    <article class="person"><h3>Preeti</h3>
+      <p>D/o Mrs. Shalini Agrawal &amp; Mr. Umesh Agrawal</p>
+      <p class="small">Granddaughter of<br>Smt. Kela Devi &amp; Late Shri Ram Avatar Agrawal</p></article>
+    <div class="weds"><svg aria-hidden="true"><use href="#lotus"/></svg><span>Weds</span></div>
+    <article class="person"><h3>Saurabh</h3>
+      <p>S/o Mrs. Shila Devi &amp; Late Shri Vijay Kumar Singh</p>
+      <p class="small">Grandson of<br>Smt. Jagmano Devi &amp; Late Shri Raja Ram Singh</p></article>
+  </div>
+</section>
+
+<section class="venue reveal" id="venue">
+  <p class="eyebrow">In the land of Radha &amp; Krishna</p>
+  <h2>Vrindavan Dham</h2>
+  <div class="venue-grid">
+    <article><b>25 November</b><h3>Hotel Radha Krishna</h3><p>Vrindavan</p>
+      <a href="https://share.google/SJwuKIk8u12fsCX3K" target="_blank" rel="noopener">Get directions</a></article>
+    <article><b>26 November</b><h3>SNJ Lakshmi Dham</h3><p>Vrindavan</p>
+      <a href="https://www.google.com/maps/search/?api=1&query=SNJ%20Lakshmi%20Dham%20Vrindavan" target="_blank" rel="noopener">Get directions</a></article>
+  </div>
+  <blockquote>“Where Radha is, there Krishna is; where Krishna is, there Radha is — one love in two forms.”</blockquote>
+  <p class="count" role="timer" aria-label="Time until 25 November 2026"><span id="cd">—</span></p>
+</section>
+
+<section class="events day1" id="events">
+  <div class="era reveal">
+    <p class="eyebrow">25 November</p>
+    <h2>Tilak, Haldi &amp; Sangeet</h2>
+  </div>
+  <div class="evs">
+    <article class="ev tilak reveal"><span class="ic">🪔</span><time>10:00 AM</time><h3>Tilak</h3><p>The sacred tilak ceremony begins our festivities, blessed with rhythm and devotion.</p></article>
+    <article class="ev haldi reveal"><span class="ic">🌼</span><time>2:00 PM</time><h3>Haldi</h3><p>Golden turmeric, marigold showers and the playful colours of Vrindavan’s Holi-like joy.</p></article>
+    <article class="ev sangeet reveal"><span class="ic">🪘</span><time>9:00 PM</time><h3>Sangeet</h3><p>As the moon rises over the Yamuna, join us for Raas, song and dance under the stars.</p><div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+  </div>
+</section>
+
+<section class="events day2" id="wedding">
+  <div class="era reveal">
+    <p class="eyebrow">26 November</p>
+    <h2>The Wedding Day</h2>
+    <p class="note">As Krishna won the heart of Rukmini, may your blessings crown our new beginning.</p>
+  </div>
+  <div class="evs">
+    <article class="ev baraat reveal"><span class="ic">🥁</span><time>11:00 AM IST</time><h3>Baraat Aagaman</h3><p>The groom’s procession arrives with music, dhol, nagada and dancing.</p></article>
+    <article class="ev phere reveal"><span class="ic">🔥</span><time>12:00 PM</time><h3>Phere</h3><p>Seven sacred vows before Agni, in the holy land of Braj.</p></article>
+    <article class="ev vermala reveal"><span class="ic">💐</span><time>9:00 PM</time><h3>Vermala &amp; Reception</h3><p>The exchange of garlands, followed by an evening of dinner and celebration.</p></article>
+  </div>
+</section>
+
+<section class="rsvp reveal" id="rsvp">
+  <svg class="lotus" aria-hidden="true"><use href="#lotus"/></svg>
+  <p class="eyebrow">With folded hands</p>
+  <h2>RSVP</h2>
+  <p class="fam">Agrawal Family</p>
+  <div class="rsvp-grid">
+    <article><h3>Agrawal Family</h3><p>Harshit-Pooja<br>Pulkit-Princi<br>Vaibhav-Ishani<br>Shubham, Ankit<br>Neelesh, Hardik<br>and Agrawal Family</p></article>
+    <article><h3>Special Request</h3><p>Mathuresh-Sadhana<br>Rakesh-Rajni<br>Brijesh-Kalpana<br>Yogesh-Nina<br>Gopesh-Renu</p></article>
+    <article><h3>Special Invitation</h3><p>Mr. Banwari Lal Aggarawal<br>Akanksha - Yogesh Singla<br>Devanshi</p></article>
+    <article><h3>Narottam Das Gopesh Kumar</h3><p>31, First Floor, New Cloth Market,<br>Bhilwara (Rajasthan)</p>
+      <p class="ph"><a href="tel:+919352115244">9352115244</a> · <a href="tel:+919414302584">9414302584</a></p></article>
+    <article><h3>Narottam Das Yogesh Kumar</h3><p>Pasratta Bazar,<br>Hathras (UP)</p>
+      <p class="ph"><a href="tel:+919458635352">9458635352</a> · <a href="tel:+919319712117">9319712117</a></p></article>
+    <article><h3>Narottam Das Mathuresh Kumar</h3><p>Pasratta Bazar,<br>Hathras (UP)</p>
+      <p class="ph"><a href="tel:+919319426264">9319426264</a> · <a href="tel:+917520478020">7520478020</a></p></article>
+    <article><h3>NY Collection</h3><p>Kothi Balmukund Parisar, Mursan Gate,<br>Hathras (UP)</p>
+      <p class="ph"><a href="tel:+919997675744">9997675744</a></p></article>
+  </div>
+  <p class="sign">“मेली बुआ की छादी में जुलूल-जुलूल आना” - Parnika, Shreeja, Hitanshi, Reyansh</p>
+  <p class="sign">॥ राधे राधे ॥</p>
+</section>
+</main>
+
+<footer><span>Preeti <em>&amp;</em> Saurabh</span><button id="share" type="button">Share invitation</button></footer>
+<button class="music" id="music" type="button" aria-pressed="false" aria-label="Play music">♪ Dhol &amp; Bhajan</button>
+<audio id="bg" loop preload="none" src="music/din-shagna-da.mp3"></audio>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+var t=new Date("2026-11-25T00:00:00+05:30").getTime();
+function tick(){
+  var s=Math.floor(Math.max(0,t-Date.now())/1000);
+  $("d").textContent=Math.floor(s/86400);
+  $("h").textContent=Math.floor(s%86400/3600);
+  $("m").textContent=Math.floor(s%3600/60);
+  $("s").textContent=s%60;
+  var cd=$("cd");
+  if(cd){cd.textContent=Math.floor(s/86400)+"d "+Math.floor(s%86400/3600)+"h "+Math.floor(s%3600/60)+"m "+s%60+"s";}
+}
+tick();setInterval(tick,1000);
+var c=$("cv");
+if(c){
+  var x=c.getContext("2d"),down=false;
+  x.fillStyle="#d4a94f";x.fillRect(0,0,260,130);
+  x.fillStyle="#7a1f2b";x.font="46px Georgia,serif";x.textAlign="center";x.fillText("\u2665",130,66);
+  x.font="14px Manrope,sans-serif";x.fillText("Scratch here",130,100);
+  function sc(e){var r=c.getBoundingClientRect();x.globalCompositeOperation="destination-out";x.beginPath();x.arc((e.clientX-r.left)*260/r.width,(e.clientY-r.top)*130/r.height,16,0,7);x.fill()}
+  function chk(){var d=x.getImageData(0,0,260,130).data,n=0,i;for(i=3;i<d.length;i+=16){if(d[i]<20)n++}if(n/(d.length/16)>.45)c.style.display="none"}
+  c.onpointerdown=function(e){down=true;c.setPointerCapture(e.pointerId);sc(e)};
+  c.onpointermove=function(e){if(down)sc(e)};
+  c.onpointerup=function(){down=false;chk()};
+}
+})();
+</script>
+</body>
+</html>
